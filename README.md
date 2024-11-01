@@ -76,6 +76,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zk7: miden vm: a stark-friendly vm for blockchains - bobbin threadbare – polygon](https://www.youtube.com/watch?v=81UAaiIgIYA&t=803s)
 - [zeroing into zkvm](https://taiko.mirror.xyz/e_5GeGGFJIrOxqvXOfzY6HmWcRjCjRyG0NQF1zbNpNQ)
 - [zkvm design walkthrough with max and daniel](https://www.youtube.com/watch?v=aobrJ-zTcAU)
+- [Verification of zkWasm in Coq](https://github.com/CertiKProject/zkwasm-fv)
 
 ## related awesome lists
 
