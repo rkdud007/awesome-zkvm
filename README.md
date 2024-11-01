@@ -58,9 +58,9 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## papers
 
-- [cairo – a turing-complete stark-friendly cpu architecture](https://eprint.iacr.org/2021/1063.pdf)
+- [Cairo – a Turing-complete STARK-friendly CPU architecture](https://eprint.iacr.org/2021/1063.pdf)
 - [RISC Zero zkVM: Scalable, Transparent Arguments of RISC-V Integrity](https://dev.risczero.com/proof-system-in-detail.pdf)
-
+- [Jolt: SNARKs for Virtual Machines via Lookups](https://eprint.iacr.org/2023/1217.pdf)
 ## resources
 
 - [a zero-knowledge paradigm series](https://www.lita.foundation/blog/zero-knowledge-paradigm-zkvm)
