@@ -25,6 +25,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [bench](#bench)
 - [papers](#papers)
 - [resources](#resources)
+- [tutorials](#tutorials)
 - [architecture](#architecture)
   - [precompiles](#precompiles)
   - [recursion](#recursion)
@@ -59,12 +60,17 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## papers
 
 ### Cairo
+
 - [Cairo – a Turing-complete STARK-friendly CPU architecture](https://eprint.iacr.org/2021/1063.pdf)
 - [A Verified Algebraic Representation of Cairo Program Execution](https://dl.acm.org/doi/pdf/10.1145/3497775.3503675)
 - [A Proof-Producing Compiler for Blockchain Applications](https://drops.dagstuhl.de/storage/00lipics/lipics-vol268-itp2023/LIPIcs.ITP.2023.7/LIPIcs.ITP.2023.7.pdf)
+
 ### Jolt
+
 - [Jolt: SNARKs for Virtual Machines via Lookups](https://eprint.iacr.org/2023/1217.pdf)
+
 ### Risc Zero
+
 - [RISC Zero zkVM: Scalable, Transparent Arguments of RISC-V Integrity](https://dev.risczero.com/proof-system-in-detail.pdf)
 
 ## resources
@@ -83,6 +89,13 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zeroing into zkvm](https://taiko.mirror.xyz/e_5GeGGFJIrOxqvXOfzY6HmWcRjCjRyG0NQF1zbNpNQ)
 - [zkvm design walkthrough with max and daniel](https://www.youtube.com/watch?v=aobrJ-zTcAU)
 - [Verification of zkWasm in Coq](https://github.com/CertiKProject/zkwasm-fv)
+
+## tutorials
+
+- [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
+- [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
+- [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
+- [stark 101](https://starkware.co/stark-101/)
 
 ## related awesome lists
 
