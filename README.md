@@ -93,6 +93,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## tutorials
 
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
+- [fri from scratch](https://blog.lambdaclass.com/how-to-code-fri-from-scratch/)
 - [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
 - [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
 - [stark 101](https://starkware.co/stark-101/)
