@@ -89,6 +89,8 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zeroing into zkvm](https://taiko.mirror.xyz/e_5GeGGFJIrOxqvXOfzY6HmWcRjCjRyG0NQF1zbNpNQ)
 - [zkvm design walkthrough with max and daniel](https://www.youtube.com/watch?v=aobrJ-zTcAU)
 - [Verification of zkWasm in Coq](https://github.com/CertiKProject/zkwasm-fv)
+- [zk11: polynomial acceleration for stark vms](https://www.youtube.com/watch?v=R07ina4k7hg)
+- [risc zero architecture presentation @ stanford](https://www.youtube.com/watch?v=RtGk6967PC4)
 
 ## tutorials
 
