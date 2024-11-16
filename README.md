@@ -90,7 +90,9 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zkvm design walkthrough with max and daniel](https://www.youtube.com/watch?v=aobrJ-zTcAU)
 - [Verification of zkWasm in Coq](https://github.com/CertiKProject/zkwasm-fv)
 - [zk11: polynomial acceleration for stark vms](https://www.youtube.com/watch?v=R07ina4k7hg)
+- [what does risc v have to do with risc zero's zkvm](https://www.youtube.com/watch?v=11DIflEwx50)
 - [risc zero architecture presentation @ stanford](https://www.youtube.com/watch?v=RtGk6967PC4)
+- [continuations: scaling in zkvm](https://www.youtube.com/watch?v=h1qWnf-M5lo)
 
 ## tutorials
 
