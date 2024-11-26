@@ -75,6 +75,10 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 - [RISC Zero zkVM: Scalable, Transparent Arguments of RISC-V Integrity](https://dev.risczero.com/proof-system-in-detail.pdf)
 
+### EDEN
+
+- [EDEN](https://eprint.iacr.org/2023/1021.pdf)
+
 ## resources
 
 - [a zero-knowledge paradigm series](https://www.lita.foundation/blog/zero-knowledge-paradigm-zkvm)
