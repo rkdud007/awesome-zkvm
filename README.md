@@ -36,6 +36,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## projects repositories
 
 - [cairo](https://github.com/lambdaclass/cairo-vm)
+- [ceno](https://github.com/scroll-tech/ceno)
 - [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)
 - [jolt](https://github.com/a16z/jolt)
 - [miden](https://github.com/0xPolygonMiden/miden-vm)
@@ -95,6 +96,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [risc zero architecture presentation @ stanford](https://www.youtube.com/watch?v=RtGk6967PC4)
 - [continuations: scaling in zkvm](https://www.youtube.com/watch?v=h1qWnf-M5lo)
 - [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
+- [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 
 ## tutorials
 
