@@ -40,6 +40,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)
 - [jolt](https://github.com/a16z/jolt)
 - [miden](https://github.com/0xPolygonMiden/miden-vm)
+- [mozak vm](https://github.com/0xmozak/mozak-vm)
 - [nexus](https://github.com/nexus-xyz/nexus-zkvm)
 - [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)
 - [olavm](https://github.com/Sin7Y/olavm)
