@@ -40,7 +40,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 | [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                      |
 | [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                      |
 | [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                      |
-| [jolt](https://github.com/a16z/jolt)                             | RISC-V |                      |
+| [jolt](https://github.com/a16z/jolt)                             | RISC-V | :x:                  |
 | [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                      |
 | [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                      |
 | [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V |                      |
@@ -51,7 +51,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 | [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :heavy_check_mark:   |
 | [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                      |
 | [triton vm](https://github.com/TritonVM/triton-vm)               | Custom |                      |
-| [valida](https://github.com/valida-xyz/valida)                   | Valida |                      |
+| [valida](https://github.com/valida-xyz/valida)                   | Valida | :x:                  |
 | [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                      |
 | [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :heavy_check_mark:   |
 | [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :heavy_check_mark:   |
