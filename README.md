@@ -33,27 +33,28 @@ A curated list of zkVM, zero-knowledge virtual machine.
   - [hardware](#hardware)
 - [related awesome lists](#related-awesome-lists)
 
-## projects repositories
+## projects 
 
-- [cairo](https://github.com/lambdaclass/cairo-vm)
-- [ceno](https://github.com/scroll-tech/ceno)
-- [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)
-- [jolt](https://github.com/a16z/jolt)
-- [miden](https://github.com/0xPolygonMiden/miden-vm)
-- [mozak vm](https://github.com/0xmozak/mozak-vm)
-- [nexus](https://github.com/nexus-xyz/nexus-zkvm)
-- [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)
-- [olavm](https://github.com/Sin7Y/olavm)
-- [powdr](https://github.com/powdr-labs/powdr)
-- [risc0](https://github.com/risc0/risc0)
-- [sp1](https://github.com/succinctlabs/sp1)
-- [sphinx](https://github.com/argumentcomputer/sphinx)
-- [triton vm](https://github.com/TritonVM/triton-vm)
-- [valida](https://github.com/valida-xyz/valida)
-- [zisk](https://github.com/0xPolygonHermez/zisk)
-- [zkLLVM](https://github.com/NilFoundation/zkLLVM)
-- [zkWasm](https://github.com/DelphinusLab/zkWasm)
-- [zkm](https://github.com/zkMIPS/zkm)
+| zkVM | ISA | Continuation Support |
+|:----------------------------------------------------------------:|:------:|-------------------:|
+| [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                    |
+| [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                    |
+| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)|         | RISC-V |                    |
+| [jolt](https://github.com/a16z/jolt)                             | RISC-V |                    |
+| [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                    |
+| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                    |
+| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V |                    |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)| MIPS   |                    |
+| [olavm](https://github.com/Sin7Y/olavm)                          | Custom |                    |
+| [powdr](https://github.com/powdr-labs/powdr)                     | RISC-V | :heavy_check_mark: |
+| [risc0](https://github.com/risc0/risc0)                          | RISC-V | :heavy_check_mark: |
+| [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :heavy_check_mark: |
+| [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                    |
+| [triton vm](https://github.com/TritonVM/triton-vm)               | Custom |                    |
+| [valida](https://github.com/valida-xyz/valida)                   | Valida |                    |
+| [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                    |
+| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :heavy_check_mark: |
+| [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :heavy_check_mark: |
 
 ## bench
 
