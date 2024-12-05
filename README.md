@@ -73,6 +73,10 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 - [Jolt: SNARKs for Virtual Machines via Lookups](https://eprint.iacr.org/2023/1217.pdf)
 
+### SP1
+
+- [Succint Network: Prove the World's software](https://www.provewith.us/)
+
 ### Risc Zero
 
 - [RISC Zero zkVM: Scalable, Transparent Arguments of RISC-V Integrity](https://dev.risczero.com/proof-system-in-detail.pdf)
@@ -107,6 +111,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## tutorials
 
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
+- [continuous read  only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
 - [fri from scratch](https://blog.lambdaclass.com/how-to-code-fri-from-scratch/)
 - [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
 - [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
