@@ -39,7 +39,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |:----------------------------------------------------------------:|:------:|-------------------:|
 | [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                    |
 | [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                    |
-| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)|         | RISC-V |                    |
+| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                    |
 | [jolt](https://github.com/a16z/jolt)                             | RISC-V |                    |
 | [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                    |
 | [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                    |
