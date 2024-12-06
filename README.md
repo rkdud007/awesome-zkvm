@@ -27,10 +27,10 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [resources](#resources)
 - [tutorials](#tutorials)
 - [architecture](#architecture)
-  - [precompiles](#precompiles)
-  - [recursion](#recursion)
-  - [lookup arguments](#lookup-arguments)
-  - [hardware](#hardware)
+- [precompiles](#precompiles)
+- [recursion](#recursion)
+- [lookup arguments](#lookup-arguments)
+- [hardware](#hardware)
 - [related awesome lists](#related-awesome-lists)
 
 ## projects 
@@ -53,8 +53,8 @@ A curated list of zkVM, zero-knowledge virtual machine.
 | [triton vm](https://github.com/TritonVM/triton-vm)               | Custom |                |     |                  |
 | [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:   |     |                  |
 | [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                |     |                  |
-| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle: |     |                  |
 | [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle: |     |                  |
+| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle: |     |                  |
 
 ## bench
 
