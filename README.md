@@ -35,33 +35,80 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## projects 
 
-| zkVM                                                             | Release | ISA    | Continuations      | GPU | Parallel Proving |
-|:----------------------------------------------------------------:|:-------:|:------:|:------------------:|:---:|:----------------:|
-| [cairo](https://github.com/lambdaclass/cairo-vm)                 | v1.0.1 | Cairo  |                    |     |                  |
-| [ceno](https://github.com/scroll-tech/ceno)                      |  | RISC-V |                    |     |                  |
-| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | v0.0.5 | RISC-V |                    |     |                  |
-| [jolt](https://github.com/a16z/jolt)                             |  | RISC-V | :x:                |     |                  |
-| [miden](https://github.com/0xPolygonMiden/miden-vm)              | v0.11.0 | Wasm   |                    |     |                  |
-| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | v0.1 | RISC-V |                    |     |                  |
-| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 |  | RISC-V | :heavy_check_mark: |     |                  |
-| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)|  | MIPS   |                    |     |                  |
-| [olavm](https://github.com/Sin7Y/olavm)                          | testnet-alpha | Custom |                    |     |                  |
-| [powdr](https://github.com/powdr-labs/powdr)                     | v0.1.2 | RISC-V | :heavy_check_mark: |     |                  |
-| [risc0](https://github.com/risc0/risc0)                          | v1.2.0 | RISC-V | :heavy_check_mark: |     |                  |
-| [sp1](https://github.com/succinctlabs/sp1)                       | v4.0.0-rc.1 | RISC-V | :heavy_check_mark: |     |                  |
-| [sphinx](https://github.com/argumentcomputer/sphinx)             | v1.0.0 |        |                    |     |                  |
-| [triton vm](https://github.com/TritonVM/triton-vm)               | v0.43.0 | Custom |                    |     |                  |
-| [valida](https://github.com/valida-xyz/valida)                   |  | Valida | :x:                |     |                  |
-| [zisk](https://github.com/0xPolygonHermez/zisk)                  | nightly-5df9a3679cd2a728fcad21730e0c1d12b642ff21 | RISC-V |                    |     |                  |
-| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 |  | Wasm   | :heavy_check_mark: |     |                  |
-| [zkm](https://github.com/zkMIPS/zkm)                             |  | MIPS   | :heavy_check_mark: |     |                  |
+| zkVM                                                             | ISA    | Continuations  | GPU | Parallel Proving |
+|:----------------------------------------------------------------:|:------:|:--------------:|:---:|:----------------:|
+| [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                |     |                  |
+| [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                |     |                  |
+| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                |     |                  |
+| [jolt](https://github.com/a16z/jolt)                             | RISC-V | :red_circle:   |     |                  |
+| [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                |     |                  |
+| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                |     |                  |
+| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V | :green_circle: |     |                  |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)| MIPS   |                |     |                  |
+| [olavm](https://github.com/Sin7Y/olavm)                          | Valida |                |     |                  |
+| [powdr](https://github.com/powdr-labs/powdr)                     | RISC-V | :green_circle: |     |                  |
+| [risc0](https://github.com/risc0/risc0)                          | RISC-V | :green_circle: |     |                  |
+| [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :green_circle: |     |                  |
+| [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                |     |                  |
+| [triton vm](https://github.com/TritonVM/triton-vm)               | Custom |                |     |                  |
+| [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:   |     |                  |
+| [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                |     |                  |
+| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle: |     |                  |
+| [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle: |     |                  |
+
+## bench
+
 - [benchmarks (lita)](https://lita.gitbook.io/lita-documentation/architecture/benchmarks) | [code](https://github.com/lita-xyz/benchmarks)
 - [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks) 
 - zkvm-benchmarks (a16z) | [code](https://github.com/a16z/zkvm-benchmarks)
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
-- [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 
-*Release versions last updated: 2024-12-06 19:52 UTC*
+## papers
+
+### Cairo
+
+- [Cairo – a Turing-complete STARK-friendly CPU architecture](https://eprint.iacr.org/2021/1063.pdf)
+- [A Verified Algebraic Representation of Cairo Program Execution](https://dl.acm.org/doi/pdf/10.1145/3497775.3503675)
+- [A Proof-Producing Compiler for Blockchain Applications](https://drops.dagstuhl.de/storage/00lipics/lipics-vol268-itp2023/LIPIcs.ITP.2023.7/LIPIcs.ITP.2023.7.pdf)
+
+### Jolt
+
+- [Jolt: SNARKs for Virtual Machines via Lookups](https://eprint.iacr.org/2023/1217.pdf)
+
+### SP1
+
+- [Succint Network: Prove the World's software](https://www.provewith.us/)
+
+### Risc Zero
+
+- [RISC Zero zkVM: Scalable, Transparent Arguments of RISC-V Integrity](https://dev.risczero.com/proof-system-in-detail.pdf)
+
+### EDEN
+
+- [EDEN](https://eprint.iacr.org/2023/1021.pdf)
+
+## resources
+
+- [a zero-knowledge paradigm series](https://www.lita.foundation/blog/zero-knowledge-paradigm-zkvm)
+- [cairo – a turing-complete stark-friendly cpu architecture - shahar papini](https://www.youtube.com/watch?v=vVgHL5vpJxY&t=33s)
+- [lasso + jolt playlist](https://youtube.com/playlist?list=PLjQ9HCQMu_8xjOEM_vh5p26ODtr-mmGxO&si=Uega8IMg_J8kNaa8)
+- [new paradigm in ethereum l2 scaling: multi-proving and zk-vms](https://www.mikkoikola.com/blog/2023/12/11/new-paradigm-in-ethereum-l2-scaling-multi-proving-and-zk-vms)
+- [the nexus v1.0 zkvm - daniel marin (nexus)](https://www.youtube.com/watch?v=UtzFOwQp8n4)
+- [understanding jolt: clarifications and reflections](https://a16zcrypto.com/posts/article/understanding-jolt-clarifications-and-reflections/)
+- [zk whiteboard sessions – module seven: zero knowledge virtual machines (zkvm) with grjte](https://www.youtube.com/watch?v=GRFPGJW0hic)
+- [zk10: analysis of zkvm designs - wei dai & terry chung](https://www.youtube.com/watch?v=tWJZX-WmbeY&t=325s)
+- [zk11: o1vm: building a real-world zkvm for mips - danny willems](https://www.youtube.com/watch?v=HDH2KXRAxAc)
+- [zk12: memory checking in ivc-based zkvm - jens groth](https://www.youtube.com/watch?v=kzSYNFh4uQ0&list=PLothk45x3HC9Oz4f3e9-OoYUEytfHWCl5)
+- [zk7: miden vm: a stark-friendly vm for blockchains - bobbin threadbare – polygon](https://www.youtube.com/watch?v=81UAaiIgIYA&t=803s)
+- [zeroing into zkvm](https://taiko.mirror.xyz/e_5GeGGFJIrOxqvXOfzY6HmWcRjCjRyG0NQF1zbNpNQ)
+- [zkvm design walkthrough with max and daniel](https://www.youtube.com/watch?v=aobrJ-zTcAU)
+- [Verification of zkWasm in Coq](https://github.com/CertiKProject/zkwasm-fv)
+- [zk11: polynomial acceleration for stark vms](https://www.youtube.com/watch?v=R07ina4k7hg)
+- [what does risc v have to do with risc zero's zkvm](https://www.youtube.com/watch?v=11DIflEwx50)
+- [risc zero architecture presentation @ stanford](https://www.youtube.com/watch?v=RtGk6967PC4)
+- [continuations: scaling in zkvm](https://www.youtube.com/watch?v=h1qWnf-M5lo)
+- [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
+- [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 
 ## tutorials
 
