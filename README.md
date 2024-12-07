@@ -35,26 +35,26 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## projects 
 
-| zkVM                                                             | ISA    | Continuations & <br> Parallel Proving | GPU            |
-|:----------------------------------------------------------------:|:------:|:-------------------------------------:|:--------------:|
-| [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                                       |                |
-| [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                                       |                |
-| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                                       |                |
-| [jolt](https://github.com/a16z/jolt)                             | RISC-V | :red_circle:                          |                |
-| [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                                       |                |
-| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                                       |                |
-| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V | :green_circle:                        |                |
-| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)| MIPS   |                                       |                |
-| [olavm](https://github.com/Sin7Y/olavm)                          | Valida |                                       |                |
-| [powdr](https://github.com/powdr-labs/powdr)                     | RISC-V | :green_circle:                        |                |
-| [risc0](https://github.com/risc0/risc0)                          | RISC-V | :green_circle:                        | :green_circle: |
-| [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :green_circle:                        | :green_circle: |
-| [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                                       |                |
-| [triton vm](https://github.com/TritonVM/triton-vm)               | Triton |                                       |                |
-| [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:                          |                |
-| [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                                       |                |
-| [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle:                        |                |
-| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle:                        |                |
+| zkVM                                                             | ISA    | Continuations & <br> Parallel Proving | GPU            | Languages |
+|:----------------------------------------------------------------:|:------:|:-------------------------------------:|:--------------:|:---------:|
+| [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                                       |                |           |
+| [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                                       |                |           |
+| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                                       |                |           |
+| [jolt](https://github.com/a16z/jolt)                             | RISC-V | :red_circle:                          |                |           |
+| [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                                       |                |           |
+| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                                       |                |           |
+| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V | :green_circle:                        |                |           |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)| MIPS   |                                       |                |           |
+| [olavm](https://github.com/Sin7Y/olavm)                          | Valida |                                       |                |           |
+| [powdr](https://github.com/powdr-labs/powdr)                     | RISC-V | :green_circle:                        |                |           |
+| [risc0](https://github.com/risc0/risc0)                          | RISC-V | :green_circle:                        | :green_circle: |           |
+| [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :green_circle:                        | :green_circle: |           |
+| [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                                       |                |           |
+| [triton vm](https://github.com/TritonVM/triton-vm)               | Triton |                                       |                |           |
+| [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:                          |                |           |
+| [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                                       |                |           |
+| [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle:                        |                |           |
+| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle:                        |                |           |
 
 ## bench
 
