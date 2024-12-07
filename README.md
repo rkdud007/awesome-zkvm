@@ -50,7 +50,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 | [risc0](https://github.com/risc0/risc0)                          | RISC-V | :green_circle:                    | :green_circle: |
 | [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :green_circle:                    | :green_circle: |
 | [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                                   |                |
-| [triton vm](https://github.com/TritonVM/triton-vm)               | Custom |                                   |                |
+| [triton vm](https://github.com/TritonVM/triton-vm)               | Triton |                                   |                |
 | [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:                      |                |
 | [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                                   |                |
 | [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle:                    |                |
