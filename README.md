@@ -27,33 +27,34 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [resources](#resources)
 - [tutorials](#tutorials)
 - [architecture](#architecture)
-  - [precompiles](#precompiles)
-  - [recursion](#recursion)
-  - [lookup arguments](#lookup-arguments)
-  - [hardware](#hardware)
+- [precompiles](#precompiles)
+- [recursion](#recursion)
+- [lookup arguments](#lookup-arguments)
+- [hardware](#hardware)
 - [related awesome lists](#related-awesome-lists)
 
-## projects repositories
+## projects 
 
-- [cairo](https://github.com/lambdaclass/cairo-vm)
-- [ceno](https://github.com/scroll-tech/ceno)
-- [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)
-- [jolt](https://github.com/a16z/jolt)
-- [miden](https://github.com/0xPolygonMiden/miden-vm)
-- [mozak vm](https://github.com/0xmozak/mozak-vm)
-- [nexus](https://github.com/nexus-xyz/nexus-zkvm)
-- [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)
-- [olavm](https://github.com/Sin7Y/olavm)
-- [powdr](https://github.com/powdr-labs/powdr)
-- [risc0](https://github.com/risc0/risc0)
-- [sp1](https://github.com/succinctlabs/sp1)
-- [sphinx](https://github.com/argumentcomputer/sphinx)
-- [triton vm](https://github.com/TritonVM/triton-vm)
-- [valida](https://github.com/valida-xyz/valida)
-- [zisk](https://github.com/0xPolygonHermez/zisk)
-- [zkLLVM](https://github.com/NilFoundation/zkLLVM)
-- [zkWasm](https://github.com/DelphinusLab/zkWasm)
-- [zkm](https://github.com/zkMIPS/zkm)
+| zkVM                                                             | ISA    | Continuations & <br> Parallel Proving | GPU            | Languages | Precompiles |
+|:----------------------------------------------------------------:|:------:|:-------------------------------------:|:--------------:|:---------:|:-----------:|
+| [cairo](https://github.com/lambdaclass/cairo-vm)                 | Cairo  |                                       |                |           |             |
+| [ceno](https://github.com/scroll-tech/ceno)                      | RISC-V |                                       |                |           |             |
+| [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)          | RISC-V |                                       |                |           |             |
+| [jolt](https://github.com/a16z/jolt)                             | RISC-V | :red_circle:                          |                |           |             |
+| [miden](https://github.com/0xPolygonMiden/miden-vm)              | Wasm   |                                       |                |           |             |
+| [mozak vm](https://github.com/0xmozak/mozak-vm)                  | RISC-V |                                       |                |           |             |
+| [nexus](https://github.com/nexus-xyz/nexus-zkvm)                 | RISC-V | :green_circle:                        |                |           |             |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm)| MIPS   |                                       |                |           |             |
+| [olavm](https://github.com/Sin7Y/olavm)                          | Valida |                                       |                |           |             |
+| [powdr](https://github.com/powdr-labs/powdr)                     | RISC-V | :green_circle:                        |                |           |             |
+| [risc0](https://github.com/risc0/risc0)                          | RISC-V | :green_circle:                        | :green_circle: |           |             |
+| [sp1](https://github.com/succinctlabs/sp1)                       | RISC-V | :green_circle:                        | :green_circle: |           |             |
+| [sphinx](https://github.com/argumentcomputer/sphinx)             |        |                                       |                |           |             |
+| [triton vm](https://github.com/TritonVM/triton-vm)               | Triton |                                       |                |           |             |
+| [valida](https://github.com/valida-xyz/valida)                   | Valida | :red_circle:                          |                |           |             |
+| [zisk](https://github.com/0xPolygonHermez/zisk)                  | RISC-V |                                       |                |           |             |
+| [zkm](https://github.com/zkMIPS/zkm)                             | MIPS   | :green_circle:                        |                |           |             |
+| [zkWasm](https://github.com/DelphinusLab/zkWasm)                 | Wasm   | :green_circle:                        |                |           |             |
 
 ## bench
 
@@ -69,6 +70,10 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [Cairo – a Turing-complete STARK-friendly CPU architecture](https://eprint.iacr.org/2021/1063.pdf)
 - [A Verified Algebraic Representation of Cairo Program Execution](https://dl.acm.org/doi/pdf/10.1145/3497775.3503675)
 - [A Proof-Producing Compiler for Blockchain Applications](https://drops.dagstuhl.de/storage/00lipics/lipics-vol268-itp2023/LIPIcs.ITP.2023.7/LIPIcs.ITP.2023.7.pdf)
+
+### Ceno
+
+-[Ceno: Non-uniform, Segment and Parallel Zero-knowledge Virtual Machine](https://eprint.iacr.org/2024/387.pdf)
 
 ### Jolt
 
