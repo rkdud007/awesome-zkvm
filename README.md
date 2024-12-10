@@ -37,6 +37,9 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## projects 
 
+> [!WARNING]
+> This codebase is experimental and not production-ready 🚧
+
 - ISA (Instruction Set Architecture): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
 - Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
 - Precompiles (Built-ins, Chiplets): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
@@ -60,7 +63,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |       [sphinx](https://github.com/argumentcomputer/sphinx)        |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
 |        [triton vm](https://github.com/TritonVM/triton-vm)         |   Triton Assembly    |             :red_circle:              |  :red_circle:  |                |           Triton Assembly           |
 |          [valida](https://github.com/valida-xyz/valida)           |        Valida        |             :red_circle:              |  :red_circle:  |                |               Rust, C               |
-|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |             :red_circle:              |  :red_circle:  |      PIL       |                                     |
+|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                 PIL                 |
 |               [zkm](https://github.com/zkMIPS/zkm)                |         MIPS         |            :green_circle:             | :green_circle: |                |              Rust, Go               |
 |         [zkWasm](https://github.com/DelphinusLab/zkWasm)          |         Wasm         |            :green_circle:             | :green_circle: |                | C, C++, rust, etc (wasm compilable) |
 
