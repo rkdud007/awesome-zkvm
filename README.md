@@ -53,13 +53,13 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
 | [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |         MIPS         |             :red_circle:              |  :red_circle:  |                |                 Go                  |
 |              [olavm](https://github.com/Sin7Y/olavm)              |     Ola Assembly     |             :red_circle:              | :green_circle: |                |            Ola Assembly             |
-|           [powdr](https://github.com/powdr-labs/powdr)            |        RISC-V        |            :green_circle:             | :green_circle: |                |        Rust, Powdr Assembly         |
+|           [powdr](https://github.com/powdr-labs/powdr)            |        RISC-V        |            :green_circle:             | :green_circle: |                |      Rust, Powdr, PIL Assembly      |
 |              [risc0](https://github.com/risc0/risc0)              |        RISC-V        |            :green_circle:             | :green_circle: | :green_circle: |                Rust                 |
 |            [sp1](https://github.com/succinctlabs/sp1)             |        RISC-V        |            :green_circle:             | :green_circle: | :green_circle: |                Rust                 |
 |       [sphinx](https://github.com/argumentcomputer/sphinx)        |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
 |        [triton vm](https://github.com/TritonVM/triton-vm)         |   Triton Assembly    |             :red_circle:              |  :red_circle:  |                |           Triton Assembly           |
 |          [valida](https://github.com/valida-xyz/valida)           |        Valida        |             :red_circle:              |  :red_circle:  |                |               Rust, C               |
-|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                                     |
+|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |             :red_circle:              |  :red_circle:  |      PIL       |                                     |
 |               [zkm](https://github.com/zkMIPS/zkm)                |         MIPS         |            :green_circle:             | :green_circle: |                |              Rust, Go               |
 |         [zkWasm](https://github.com/DelphinusLab/zkWasm)          |         Wasm         |            :green_circle:             | :green_circle: |                | C, C++, rust, etc (wasm compilable) |
 
