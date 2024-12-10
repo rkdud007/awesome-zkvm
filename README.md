@@ -37,7 +37,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## projects 
 
-> [!INFO]  
+> [!NOTE]  
 > Table maintained by [@piapark_eth](https://x.com/piapark_eth). Some information may be outdated or need updates—feel free to open an issue or create a pull request.
 
 
