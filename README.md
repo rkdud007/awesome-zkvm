@@ -37,8 +37,9 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## projects 
 
-> [!WARNING]
-> This codebase is experimental and not production-ready 🚧
+> [!INFO]  
+> Table maintained by [@piapark_eth](https://x.com/piapark_eth). Some information may be outdated or need updates—feel free to open an issue or create a pull request.
+
 
 - ISA (Instruction Set Architecture): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
 - Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
