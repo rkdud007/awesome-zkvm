@@ -41,6 +41,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
 - Precompiles (Built-ins, Chiplets): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
 - Proving Frontend: A user-friendly language for writing provable programs, which then get compiled down into the VM’s supported ISA for zero-knowledge execution.
+- GPU: Does it support proving on GPU
 
 |                               zkVM                                |         ISA          | Continuations & <br> Parallel Proving |  Precompiles   |      GPU       |          Proving Frontend           |
 | :---------------------------------------------------------------: | :------------------: | :-----------------------------------: | :------------: | :------------: | :---------------------------------: |
