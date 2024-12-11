@@ -84,7 +84,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ### Ceno
 
--[Ceno: Non-uniform, Segment and Parallel Zero-knowledge Virtual Machine](https://eprint.iacr.org/2024/387.pdf)
+- [Ceno: Non-uniform, Segment and Parallel Zero-knowledge Virtual Machine](https://eprint.iacr.org/2024/387.pdf)
 
 ### Jolt
 
