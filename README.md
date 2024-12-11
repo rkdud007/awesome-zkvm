@@ -38,14 +38,13 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## projects 
 
 > [!NOTE]  
-> Table maintained by [@piapark_eth](https://x.com/piapark_eth) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some information may be outdated or need updates—feel free to open an issue or create a pull request.
-
+> Maintained by [@piapark_eth](https://x.com/piapark_eth) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
 
 - ISA (Instruction Set Architecture): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
 - Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
-- Precompiles (Built-ins, Chiplets): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
+- Precompiles (Built-ins, Chiplets, Syscalls): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
 - Proving Frontend: A user-friendly language for writing provable programs, which then get compiled down into the VM’s supported ISA for zero-knowledge execution.
-- GPU: Indicates if proving on GPU is supported (based on publicly exposed GPU/CUDA code)
+- GPU: Indicates if proving on GPU is supported (based on publicly exposed Metal/CUDA code)
 
 |                               zkVM                                |         ISA          | Continuations & <br> Parallel Proving |  Precompiles   |      GPU       |          Proving Frontend           |
 | :---------------------------------------------------------------: | :------------------: | :-----------------------------------: | :------------: | :------------: | :---------------------------------: |
@@ -53,7 +52,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |            [ceno](https://github.com/scroll-tech/ceno)            |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                Rust                 |
 |      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
 |               [jolt](https://github.com/a16z/jolt)                |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                Rust                 |
-|        [miden](https://github.com/0xPolygonMiden/miden-vm)        | MASM(Miden Assembly) |             :red_circle:              | :green_circle: |                |             Rust, Wasm              |
+|        [miden](https://github.com/0xPolygonMiden/miden-vm)        | MASM(Miden Assembly) |             :red_circle:              | :green_circle: | :green_circle: |             Rust, Wasm              |
 |          [mozak vm](https://github.com/0xmozak/mozak-vm)          |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                Rust                 |
 |         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
 | [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |         MIPS         |             :red_circle:              |  :red_circle:  |                |                 Go                  |
