@@ -55,7 +55,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |        [miden](https://github.com/0xPolygonMiden/miden-vm)        | MASM(Miden Assembly) |             :red_circle:              | :green_circle: | :green_circle: |             Rust, Wasm              |
 |          [mozak vm](https://github.com/0xmozak/mozak-vm)          |        RISC-V        |             :red_circle:              |  :red_circle:  |                |                Rust                 |
 |         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          |        RISC-V        |            :green_circle:             | :green_circle: |                |                Rust                 |
-| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |         MIPS         |             :red_circle:              |  :red_circle:  |                |                 Go                  |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |     MIPS & RISC-V    |             :red_circle:              |  :red_circle:  |                |                Rust                 |
 |              [olavm](https://github.com/Sin7Y/olavm)              |     Ola Assembly     |             :red_circle:              | :green_circle: |                |            Ola Assembly             |
 |          [powdrVM](https://github.com/powdr-labs/powdr)           |        RISC-V        |            :green_circle:             | :green_circle: |                |          Rust, Powdr, PIL           |
 |              [risc0](https://github.com/risc0/risc0)              |        RISC-V        |            :green_circle:             | :green_circle: | :green_circle: |                Rust                 |
