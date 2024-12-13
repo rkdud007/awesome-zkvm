@@ -24,6 +24,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [contents](#contents)
   - [projects](#projects)
   - [bench](#bench)
+  - [Independent/third-party Benchmarks](#independentthird-party-benchmarks)
   - [papers](#papers)
     - [Cairo](#cairo)
     - [Ceno](#ceno)
@@ -35,7 +36,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
   - [tutorials](#tutorials)
   - [related awesome lists](#related-awesome-lists)
 
-## projects 
+## projects
 
 > [!NOTE]  
 > Maintained by [@piapark_eth](https://x.com/piapark_eth) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
@@ -70,9 +71,13 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## bench
 
 - [benchmarks (lita)](https://lita.gitbook.io/lita-documentation/architecture/benchmarks) | [code](https://github.com/lita-xyz/benchmarks)
-- [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks) 
+- [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks)
 - zkvm-benchmarks (a16z) | [code](https://github.com/a16z/zkvm-benchmarks)
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
+
+## Independent/third-party Benchmarks
+
+- definitive guide to zkVMs | [article](http://mirror.xyz/stackrlabs.eth/jEBSBZtKEiMiTrRIGMCxN7n6r7al-vi25lmrnD610W4)
 
 ## papers
 
@@ -128,7 +133,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## tutorials
 
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
-- [continuous read  only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
+- [continuous read only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
 - [fri from scratch](https://blog.lambdaclass.com/how-to-code-fri-from-scratch/)
 - [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
 - [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
