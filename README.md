@@ -132,14 +132,17 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
 - [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 
-## tutorials
+## tutorials / educational zkVM
 
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
+- [chip0](https://github.com/shuklaayush/chip0)
 - [continuous read only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
 - [fri from scratch](https://blog.lambdaclass.com/how-to-code-fri-from-scratch/)
 - [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
 - [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
 - [stark 101](https://starkware.co/stark-101/)
+- [stwo brainfuck](https://github.com/kkrt-labs/stwo-brainfuck)
+- [useless zkvm](https://github.com/armanthepythonguy/Useless-ZKVM)
 
 ## related awesome lists
 
