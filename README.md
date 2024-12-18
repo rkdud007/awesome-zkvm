@@ -152,3 +152,4 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [awesome starknet #cryptography-and-maths](https://github.com/keep-starknet-strange/awesome-starknet?tab=readme-ov-file#cryptography-and-maths)
 - [awesome zkp](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
 - [awesome miden](https://github.com/phklive/awesome-miden)
+- [awesome plonky3](https://github.com/Plonky3/awesome-plonky3)
