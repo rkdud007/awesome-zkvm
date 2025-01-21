@@ -24,6 +24,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [contents](#contents)
   - [projects](#projects)
   - [bench](#bench)
+  - [Independent/third-party Benchmarks](#independentthird-party-benchmarks)
   - [papers](#papers)
     - [Cairo](#cairo)
     - [Ceno](#ceno)
@@ -32,17 +33,18 @@ A curated list of zkVM, zero-knowledge virtual machine.
     - [Risc Zero](#risc-zero)
     - [EDEN](#eden)
   - [resources](#resources)
-  - [tutorials](#tutorials)
+  - [tutorials / educational zkVM](#tutorials--educational-zkvm)
+  - [related tooling](#related-tooling)
   - [related awesome lists](#related-awesome-lists)
 
-## projects 
+## projects
 
 > [!NOTE]  
 > Maintained by [@piapark_eth](https://x.com/piapark_eth) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
 
 - ISA (Instruction Set Architecture): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
 - Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
-- Precompiles (Built-ins, Chiplets, Syscalls): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
+- Precompiles (Built-ins, Chiplets, Accelerate etc): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
 - Proving Frontend: A user-friendly language for writing provable programs, which then get compiled down into the VM’s supported ISA for zero-knowledge execution.
 - GPU: Indicates if proving on GPU is supported (based on publicly exposed Metal/CUDA code)
 
@@ -70,9 +72,15 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## bench
 
 - [benchmarks (lita)](https://lita.gitbook.io/lita-documentation/architecture/benchmarks) | [code](https://github.com/lita-xyz/benchmarks)
-- [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks) 
+- [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks)
 - zkvm-benchmarks (a16z) | [code](https://github.com/a16z/zkvm-benchmarks)
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
+
+## Independent/third-party Benchmarks
+
+- definitive guide to zkVMs | [article](http://mirror.xyz/stackrlabs.eth/jEBSBZtKEiMiTrRIGMCxN7n6r7al-vi25lmrnD610W4)
+
+- benchmark of zkVMs and proving schemes | [code](https://github.com/babybear-labs/benchmark)
 
 ## papers
 
@@ -125,14 +133,23 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
 - [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 
-## tutorials
+## tutorials / educational zkVM
 
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
-- [continuous read  only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
+- [chip0](https://github.com/shuklaayush/chip0)
+- [continuous read only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
 - [fri from scratch](https://blog.lambdaclass.com/how-to-code-fri-from-scratch/)
 - [stark by hand](https://dev.risczero.com/proof-system/stark-by-hand)
 - [stark brainfuck](https://aszepieniec.github.io/stark-brainfuck/)
 - [stark 101](https://starkware.co/stark-101/)
+- [stwo brainfuck](https://github.com/kkrt-labs/stwo-brainfuck)
+- [useless zkvm](https://github.com/armanthepythonguy/Useless-ZKVM)
+- [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/)
+  
+## related tooling
+
+- [zkRust](https://github.com/yetanotherco/zkRust)
+- [any zkVM](https://github.com/MatteoMer/any-zkvm)
 
 ## related awesome lists
 
@@ -141,3 +158,4 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [awesome starknet #cryptography-and-maths](https://github.com/keep-starknet-strange/awesome-starknet?tab=readme-ov-file#cryptography-and-maths)
 - [awesome zkp](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
 - [awesome miden](https://github.com/phklive/awesome-miden)
+- [awesome plonky3](https://github.com/Plonky3/awesome-plonky3)
