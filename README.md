@@ -160,3 +160,4 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [awesome zkp](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
 - [awesome miden](https://github.com/phklive/awesome-miden)
 - [awesome plonky3](https://github.com/Plonky3/awesome-plonky3)
+- [awesome stwo](https://github.com/keep-starknet-strange/awesome-stwo)
