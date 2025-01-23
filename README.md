@@ -40,7 +40,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 ## projects
 
 > [!NOTE]  
-> Maintained by [@piapark_eth](https://x.com/piapark_eth) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
+> Maintained by [@0xpiapark](https://x.com/0xpiapark) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
 
 - ISA ([Instruction Set Architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture)): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
 - Continuations (aka Chunking/Sharding): A technique to break oversized computations — too big for a single run — into smaller segments that get proven individually and recursively (proof of segment `n+1` includes the proving of segment `n`'s verifier). How self-contained the proving of each segment is (no commitment passed from one segment to the other) and how efficiently parallelizatable it is (minimal inter-thread comm) differs from one implementation to another.
@@ -103,6 +103,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ### SP1
 
+- [](https://github.com/succinctlabs/sp1/blob/5c8a50e08b48d22b88471f39f9cc45947ca3bf5c/book/static/SP1_Turbo_Memory_Argument.pdf)
 - [Succint Network: Prove the World's software](https://www.provewith.us/)
 
 ### Risc Zero
@@ -135,6 +136,8 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [continuations: scaling in zkvm](https://www.youtube.com/watch?v=h1qWnf-M5lo)
 - [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
 - [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
+- [Automatic Circuit Acceleration of Guest Programs](https://www.powdr.org/blog/auto-acc-circuits)
+- [Memory argument via elliptic curve based multiset hashing](https://github.com/succinctlabs/sp1/blob/5c8a50e08b48d22b88471f39f9cc45947ca3bf5c/book/static/SP1_Turbo_Memory_Argument.pdf)
 
 ## tutorials / educational zkVM
 
@@ -162,3 +165,4 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [awesome zkp](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
 - [awesome miden](https://github.com/phklive/awesome-miden)
 - [awesome plonky3](https://github.com/Plonky3/awesome-plonky3)
+- [awesome stwo](https://github.com/keep-starknet-strange/awesome-stwo)
