@@ -80,7 +80,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
 
 ## Independent/third-party Benchmarks
-
+- Benchmarking of π<sup>2</sup> ZK Metamath checkers | [code](https://github.com/Pi-Squared-Inc/zk-benchmark), including [results](https://github.com/Pi-Squared-Inc/zk-benchmark?tab=readme-ov-file#our-results)
 - definitive guide to zkVMs | [article](http://mirror.xyz/stackrlabs.eth/jEBSBZtKEiMiTrRIGMCxN7n6r7al-vi25lmrnD610W4)
 - Lurk 0.5 Benchmarks | [article](https://argument.xyz/blog/perf-2024/)
 - benchmark of zkVMs and proving schemes | [code](https://github.com/babybear-labs/benchmark)
