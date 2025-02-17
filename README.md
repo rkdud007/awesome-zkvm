@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">awesome zkVm</h1>
+  <h1 align="center">awesome zkVM</h1>
 
 A curated list of zkVM, zero-knowledge virtual machine.
 
@@ -23,6 +23,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 - [contents](#contents)
   - [projects](#projects)
+  - [Technical details](#technical-details)
   - [bench](#bench)
   - [Independent/third-party Benchmarks](#independentthird-party-benchmarks)
   - [papers](#papers)
@@ -42,33 +43,69 @@ A curated list of zkVM, zero-knowledge virtual machine.
 > [!NOTE]  
 > Maintained by [@0xpiapark](https://x.com/0xpiapark) and [@alexanderlhicks](https://x.com/alexanderlhicks). Some details may be outdated; feel free to open an issue or PR. For discussions on fair tracking methods, see the [open issues](https://github.com/rkdud007/awesome-zkvm/issues).
 
-- ISA (Instruction Set Architecture): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
-- Continuations (Sharding): A technique to break oversized computations — too big for a single run — into smaller parts that can be processed in parallel, paused, and resumed later.
+- ISA ([Instruction Set Architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture)): The fundamental “language” of the VM, defining all its basic operations and how they interact with data.
+- Continuations: Also known as chunking/sharding. A technique to break oversized computations — too big for a single run — into smaller segments that get proven individually and recursively (proof of segment `n+1` includes the proving of segment `n`'s verifier). How self-contained the proving of each segment is (no commitment passed from one segment to the other) and how efficiently parallelizatable it is (minimal inter-thread comm) differs from one implementation to another.
 - Precompiles (Built-ins, Chiplets, Accelerate etc): Specialized, pre-built functions for complex tasks (like cryptography) that boost efficiency and reduce proof overhead.
-- Proving Frontend: A user-friendly language for writing provable programs, which then get compiled down into the VM’s supported ISA for zero-knowledge execution.
-- GPU: Indicates if proving on GPU is supported (based on publicly exposed Metal/CUDA code)
+- GPU: Indicates whether proving on GPU is supported (based on publicly exposed Metal/CUDA code).
+- Proving Frontend: The programming language the programmer expresses their business logic in, which then get compiled down into the VM’s supported ISA for constrained execution.
 
-|                               zkVM                                |         ISA          | Continuations & <br> Parallel Proving |    Precompiles                                                                    |        GPU         |          Proving Frontend           |
-| :---------------------------------------------------------------: | :------------------: | :-----------------------------------: | :-------------------------------------------------------------------------------: | :----------------: | :---------------------------------: |
-|         [cairo](https://github.com/lambdaclass/cairo-vm)          |        Cairo         |                  :x:                  | :white_check_mark:                                                                |                    |                Cairo                |
-|            [ceno](https://github.com/scroll-tech/ceno)            |        RISC-V        |                  :x:                  | [:white_check_mark:](https://github.com/scroll-tech/ceno/tree/master/ceno_emul/src/syscalls)                                                                        |                    |                Rust                 |
-|      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |        RISC-V        |          :white_check_mark:           | :white_check_mark:                                                                |                    |                Rust                 |
-|               [jolt](https://github.com/a16z/jolt)                |        RISC-V        |                  :x:                  |        [:x:](https://jolt.a16zcrypto.com/future/precompiles.html)                 |                    |                Rust                 |
-|        [miden](https://github.com/0xPolygonMiden/miden-vm)        | MASM(Miden Assembly) |                  :x:                  | :white_check_mark:                                                                | :white_check_mark: |             Rust, Wasm              |
-|          [mozak vm](https://github.com/0xmozak/mozak-vm)          |        RISC-V        |                  :x:                  |        :x:                                                                        |                    |                Rust                 |
-|         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          |        RISC-V        |          :white_check_mark:           | :white_check_mark:                                                                |                    |                Rust                 |
-| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |    MIPS & RISC-V     |                  :x:                  |        :x:                                                                        |                    |                Rust                 |
-|              [olavm](https://github.com/Sin7Y/olavm)              |     Ola Assembly     |                  :x:                  | :white_check_mark:                                                                |                    |            Ola Assembly             |
-|          [openvm](https://github.com/openvm-org/openvm)           |        RISC-V        |          :white_check_mark:           | [:white_check_mark:](https://book.openvm.dev/custom-extensions/overview.html)     |                    |                Rust                 |
-|          [powdrVM](https://github.com/powdr-labs/powdr)           |        RISC-V        |          :white_check_mark:           | :white_check_mark:                                                                |                    |          Rust, Powdr, PIL           |
-|              [risc0](https://github.com/risc0/risc0)              |        RISC-V        |          :white_check_mark:           | [:white_check_mark:](https://dev.risczero.com/api/zkvm/precompiles)               | :white_check_mark: |                Rust                 |
-|            [sp1](https://github.com/succinctlabs/sp1)             |        RISC-V        |          :white_check_mark:           | [:white_check_mark:](https://docs.succinct.xyz/docs/writing-programs/precompiles) | :white_check_mark: |                Rust                 |
-|       [sphinx](https://github.com/argumentcomputer/sphinx)        |        RISC-V        |          :white_check_mark:           | :white_check_mark:                                                                |                    |                Rust                 |
-|        [triton vm](https://github.com/TritonVM/triton-vm)         |   Triton Assembly    |                  :x:                  |        :x:                                                                        |                    |           Triton Assembly           |
-|          [valida](https://github.com/valida-xyz/valida)           |        Valida        |                  :x:                  |        :x:                                                                        |                    |               Rust, C               |
-|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |          :white_check_mark:           |        :x:                                                                        |                    |                 PIL                 |
-|               [zkm](https://github.com/zkMIPS/zkm)                |         MIPS         |          :white_check_mark:           | [:white_check_mark:](https://github.com/zkMIPS/zkm/blob/main/runtime/precompiles/src/lib.rs)                                                                |                    |              Rust, Go               |
-|         [zkWasm](https://github.com/DelphinusLab/zkWasm)          |         Wasm         |          :white_check_mark:           | :white_check_mark:                                                                |                    | C, C++, rust, etc (wasm compilable) |
+|                               zkVM                                |         ISA          |   Continuations    | Parallelizable Proving |                                      Precompiles                                      |        GPU         |              Frontend               |
+| :---------------------------------------------------------------: | :------------------: | :----------------: | :--------------------: | :-----------------------------------------------------------------------------------: | :----------------: | :---------------------------------: |
+|         [cairo](https://github.com/lambdaclass/cairo-vm)          |        Cairo         |        :x:         |          :x:           |     [:white_check_mark:](https://book.cairo-lang.org/ch204-02-builtins-list.html)     |                    |                Cairo                |
+|            [ceno](https://github.com/scroll-tech/ceno)            |        RISC-V        |        :x:         |          :x:           |                                          :x:                                          |                    |                Rust                 |
+|      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   | :white_check_mark: |             Circom, PIL             |
+|               [jolt](https://github.com/a16z/jolt)                |        RISC-V        |        :x:         |          :x:           |              [:x:](https://jolt.a16zcrypto.com/future/precompiles.html)               |                    |                                     | Rust |
+|        [miden](https://github.com/0xPolygonMiden/miden-vm)        | MASM(Miden Assembly) |        :x:         |          :x:           |                                  :white_check_mark:                                   | :white_check_mark: |             Rust, Wasm              |
+|          [mozak vm](https://github.com/0xmozak/mozak-vm)          |        RISC-V        |        :x:         |          :x:           |                                          :x:                                          |                    |                Rust                 |
+|         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    |                Rust                 |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |         MIPS         |        :x:         |          :x:           |                                          :x:                                          |                    |                 Go                  |
+|              [olavm](https://github.com/Sin7Y/olavm)              |     Ola Assembly     |        :x:         |          :x:           |                                  :white_check_mark:                                   |                    |            Ola Assembly             |
+|          [openvm](https://github.com/openvm-org/openvm)           |        RISC-V        | :white_check_mark: |   :white_check_mark:   |     [:white_check_mark:](https://book.openvm.dev/custom-extensions/overview.html)     |        Rust        |
+|          [pico](https://github.com/brevis-network/pico)           |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    |                Rust                 |
+|          [powdrVM](https://github.com/powdr-labs/powdr)           |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    |            ASM assembly             |
+|              [risc0](https://github.com/risc0/risc0)              |        RISC-V        | :white_check_mark: |   :white_check_mark:   |          [:white_check_mark:](https://dev.risczero.com/api/zkvm/precompiles)          | :white_check_mark: |                Rust                 |
+|            [sp1](https://github.com/succinctlabs/sp1)             |        RISC-V        | :white_check_mark: |   :white_check_mark:   | [:white_check_mark:](https://docs.succinct.xyz/docs/sp1/writing-programs/precompiles) | :white_check_mark: |                Rust                 |
+|       [sphinx](https://github.com/argumentcomputer/sphinx)        |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    |             Rust, Lurk              |
+|        [triton vm](https://github.com/TritonVM/triton-vm)         |   Triton Assembly    |        :x:         |          :x:           |                                          :x:                                          |                    |           Triton Assembly           |
+|       [valida](https://github.com/lita-xyz/valida-releases)       |        Valida        |        :x:         |          :x:           |                                          :x:                                          |                    |               Rust, C               |
+|          [zisk](https://github.com/0xPolygonHermez/zisk)          |        RISC-V        |        :x:         |          :x:           |                                          :x:                                          |                    |                 PIL                 |
+|               [zkm](https://github.com/zkMIPS/zkm)                |         MIPS         | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    |              Rust, Go               |
+|         [zkWasm](https://github.com/DelphinusLab/zkWasm)          |         Wasm         | :white_check_mark: |   :white_check_mark:   |                                  :white_check_mark:                                   |                    | C, C++, rust, etc (wasm compilable) |
+
+## Technical details
+
+<details>
+<summary><b>Proof systems</b></summary>
+  
+- Arithmetization: The process of turning an execution trace into an algebraic statement (polynomial equations) that can be verified.
+- Optimizations: Ingredients in the proof system that can optimize the size and complexity of the constraints overall. 
+- Backends: The proof system, typically in the form of a (Polynomial) Interactive Oracle Proof (IOP) and Polynomial Commitment Scheme (PCS), used for the (typically non-interactive) prover-verifier checks. 
+- Verifiers: Programs that can do the (typically non-interactive) verification given a proof and public inputs. 
+
+|                               zkVM                                |         Arithmetization         |                               Optimizations                               |                                 Backends                                  |   Verifiers    |
+| :---------------------------------------------------------------: | :-----------------------------: | :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :------------: |
+|         [cairo](https://github.com/lambdaclass/cairo-vm)          |               AIR               |                                                                           |                                    FRI                                    |                |
+|            [ceno](https://github.com/scroll-tech/ceno)            |               GKR               |                             Lookup, Sumcheck                              |                                 Brakedown                                 |      Rust      |
+|      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |              eAIR               |                                                                           |                               FRI, Groth16                                |    Solidity    |
+|               [jolt](https://github.com/a16z/jolt)                |              R1CS               |                    Lookup, Sumcheck, Offline Mem Check                    |                                  Spartan                                  |      WASM      |
+|        [miden](https://github.com/0xPolygonMiden/miden-vm)        |        AIR  (winterfell)        |                                  Lookup,                                  |                                Winterfell                                 |      Rust      |
+|          [mozak vm](https://github.com/0xmozak/mozak-vm)          |          AIR  (Starky)          |                                  Lookup,                                  |                                    FRI                                    |      Rust      |
+|         [nexus](https://github.com/nexus-xyz/nexus-zkvm)          | Folded Accumulated Relaxed R1CS |                            Accumulated Folding                            |                  Spartan + {Zeromorph, PSE-Halo2 (KZG)}                   |      Rust      |
+| [o1vm](https://github.com/o1-labs/proof-systems/tree/master/o1vm) |            Plonkish             |                                  Lookup                                   |                                    IPA                                    |      Rust      |
+|              [olavm](https://github.com/Sin7Y/olavm)              |         AIR  (plonky2)          |                                  Lookup                                   |                                    FRI                                    |      Rust      |
+|          [openvm](https://github.com/openvm-org/openvm)           |       AIR  (plonky3), GKR       |                                                                           |                                    FRI                                    |      Rust      |
+|          [pico](https://github.com/brevis-network/pico)           |          AIR (plonky3)          |                                  Lookup                                   |                                    FRI                                    | Rust, Solidity |
+|          [powdrVM](https://github.com/powdr-labs/powdr)           |     AIR -ish (PIL, plonky3)     |                                     -                                     | PSE-Halo2 (KZG), Plonky3, FRI([eSTARK](https://eprint.iacr.org/2023/474)) |    Solidity    |
+|              [risc0](https://github.com/risc0/risc0)              |              PLONK              |                                  Plookup                                  |          [DEEP-FRI & ALI](https://eprint.iacr.org/2021/582.pdf)           | Rust, Solidity |
+|            [sp1](https://github.com/succinctlabs/sp1)             |         AIR  (plonky3)          |                                  Lookup                                   |                                    FRI                                    | Rust, Solidity |
+|       [sphinx](https://github.com/argumentcomputer/sphinx)        |   AIR  (core), PLONK  (wrap)    |                                  Lookup,                                  |                                    FRI                                    |      Rust      |
+|        [triton vm](https://github.com/TritonVM/triton-vm)         |               AIR               | Lookup,  [Contiguity](https://triton-vm.org/spec/memory-consistency.html) |                                    FRI                                    |      Rust      |
+|       [valida](https://github.com/lita-xyz/valida-releases)       |         AIR  (plonky3)          |                                                                           |                                    FRI                                    |       ?        |
+|          [zisk](https://github.com/0xPolygonHermez/zisk)          |                ?                |                                     ?                                     |                                     ?                                     |       ?        |
+|               [zkm](https://github.com/zkMIPS/zkm)                |         AIR  (plonky2)          |                                  Lookup,                                  |                                    FRI                                    |      Rust      |
+|         [zkWasm](https://github.com/DelphinusLab/zkWasm)          |              PLONK              |                                     -                                     |                                   IPA?                                    |      Rust      |
+
+</details>
 
 ## bench
 
@@ -78,10 +115,12 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
 
 ## Independent/third-party Benchmarks
-
+- Benchmarking of π<sup>2</sup> ZK Metamath checkers | [code](https://github.com/Pi-Squared-Inc/zk-benchmark), including [results](https://github.com/Pi-Squared-Inc/zk-benchmark?tab=readme-ov-file#our-results)
 - definitive guide to zkVMs | [article](http://mirror.xyz/stackrlabs.eth/jEBSBZtKEiMiTrRIGMCxN7n6r7al-vi25lmrnD610W4)
 - Lurk 0.5 Benchmarks | [article](https://argument.xyz/blog/perf-2024/)
 - benchmark of zkVMs and proving schemes | [code](https://github.com/babybear-labs/benchmark)
+- zkvm testing | [article](https://vac.dev/rlog/zkVM-testing/#summary-table)
+- prooflab benchmarks | [page](https://prooflab.dev/benchmarks)
 
 ## papers
 
@@ -101,7 +140,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ### SP1
 
-- [](https://github.com/succinctlabs/sp1/blob/5c8a50e08b48d22b88471f39f9cc45947ca3bf5c/book/static/SP1_Turbo_Memory_Argument.pdf)
+- [SP1 V4 Turbo: Memory Argument via Elliptic Curve based Multiset Hashing](https://github.com/succinctlabs/sp1/blob/5c8a50e08b48d22b88471f39f9cc45947ca3bf5c/book/static/SP1_Turbo_Memory_Argument.pdf)
 - [Succint Network: Prove the World's software](https://www.provewith.us/)
 
 ### Risc Zero
@@ -135,7 +174,6 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [Getting the bugs out of SNARKs: The road ahead](https://a16zcrypto.com/posts/article/getting-bugs-out-of-snarks/)
 - [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 - [Automatic Circuit Acceleration of Guest Programs](https://www.powdr.org/blog/auto-acc-circuits)
-- [Memory argument via elliptic curve based multiset hashing](https://github.com/succinctlabs/sp1/blob/5c8a50e08b48d22b88471f39f9cc45947ca3bf5c/book/static/SP1_Turbo_Memory_Argument.pdf)
 - [Introducing Twist and Shout](https://a16zcrypto.com/posts/article/introducing-twist-and-shout/)
 
 ## tutorials / educational zkVM
