@@ -175,6 +175,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [~tacryt-socryp on Zorp, the Nock zkVM | Reassembly23](https://www.youtube.com/watch?v=zD45V6GAD00)
 - [Automatic Circuit Acceleration of Guest Programs](https://www.powdr.org/blog/auto-acc-circuits)
 - [Introducing Twist and Shout](https://a16zcrypto.com/posts/article/introducing-twist-and-shout/)
+- [zkVM 系列课程 | Coset](https://youtube.com/playlist?list=PLbQFt1T_44DwyjIN_Jqoiq_WlYZAMw_vq)
 
 ## tutorials / educational zkVM
 
