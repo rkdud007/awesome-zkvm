@@ -193,6 +193,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
   
 ## related tooling
 
+- [zkaleido](https://github.com/alpenlabs/zkaleido)
 - [zkRust](https://github.com/yetanotherco/zkRust)
 - [any zkVM](https://github.com/MatteoMer/any-zkvm)
 
