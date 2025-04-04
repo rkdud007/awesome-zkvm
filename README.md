@@ -114,6 +114,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - zkvm-benchmarks (a16z) | [code](https://github.com/a16z/zkvm-benchmarks)
 - zkvm perf (succinct) | [code](https://github.com/succinctlabs/zkvm-perf)
 - zkvm bench (brevis) | [code](https://github.com/brevis-network/zkvm-bench)
+- Agglayer pessimistic Proof Benchmarks using zkVMs | [code](https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark)
 
 ## Independent/third-party Benchmarks
 - Benchmarks of VM proving times made by Aligned | [results](https://zkbenchmarks.com/) [code](https://github.com/yetanotherco/zkvm_benchmarks)
