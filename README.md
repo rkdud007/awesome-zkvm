@@ -30,6 +30,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
     - [Cairo](#cairo)
     - [Ceno](#ceno)
     - [Jolt](#jolt)
+    - [Nexus](#nexus)
     - [SP1](#sp1)
     - [Risc Zero](#risc-zero)
     - [EDEN](#eden)
@@ -202,6 +203,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zkaleido](https://github.com/alpenlabs/zkaleido)
 - [zkRust](https://github.com/yetanotherco/zkRust)
 - [any zkVM](https://github.com/MatteoMer/any-zkvm)
+- [ere](https://github.com/eth-act/ere)
 
 ## related awesome lists
 
