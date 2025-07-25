@@ -204,6 +204,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [zkRust](https://github.com/yetanotherco/zkRust)
 - [any zkVM](https://github.com/MatteoMer/any-zkvm)
 - [ere](https://github.com/eth-act/ere)
+- [picus](https://github.com/Veridise/Picus)
 
 ## related awesome lists
 
