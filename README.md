@@ -28,6 +28,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
   - [Independent/third-party Benchmarks](#independentthird-party-benchmarks)
   - [papers](#papers)
     - [Cairo](#cairo)
+    - [Cairo M](#cairo-m)
     - [Ceno](#ceno)
     - [Jolt](#jolt)
     - [Nexus](#nexus)
@@ -53,6 +54,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |                               zkVM                                |         ISA          |   Continuations    | Parallelizable Proving |                                         Precompiles                                          |        GPU         |              Frontend               |
 | :---------------------------------------------------------------: | :------------------: | :----------------: | :--------------------: | :------------------------------------------------------------------------------------------: | :----------------: | :---------------------------------: |
 |         [cairo](https://github.com/lambdaclass/cairo-vm)          |        Cairo         |        :x:         |          :x:           |        [:white_check_mark:](https://book.cairo-lang.org/ch204-02-builtins-list.html)         |                    |                Cairo                |
+|         [cairo m](https://github.com/kkrt-labs/cairo-m)           |       Cairo M        | :white_check_mark: |          :x:           |                                             :x:                                              |                    |               Cairo M               |
 |            [ceno](https://github.com/scroll-tech/ceno)            |        RISC-V        |        :x:         |          :x:           | [:white_check_mark:](https://github.com/scroll-tech/ceno/tree/master/ceno_emul/src/syscalls) |                    |                Rust                 |
 |      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |        RISC-V        | :white_check_mark: |   :white_check_mark:   |                                      :white_check_mark:                                      | :white_check_mark: |             Circom, PIL             |
 |               [jolt](https://github.com/a16z/jolt)                |        RISC-V        |        :x:         |          :x:           |                  [:x:](https://jolt.a16zcrypto.com/future/precompiles.html)                  |                    |                Rust                 |
@@ -86,6 +88,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 |                               zkVM                                |         Arithmetization         |                               Optimizations                               |                                 Backends                                  |   Verifiers    |
 | :---------------------------------------------------------------: | :-----------------------------: | :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :------------: |
 |         [cairo](https://github.com/lambdaclass/cairo-vm)          |               AIR               |                                                                           |                                    FRI                                    |                |
+|         [cairo m](https://github.com/kkrt-labs/cairo-m)           |               AIR               |                                   Lookup                                  |                                    FRI                                    |      Rust      |
 |            [ceno](https://github.com/scroll-tech/ceno)            |               GKR               |                             Lookup, Sumcheck                              |                                 Brakedown                                 |      Rust      |
 |      [eigen zkvm](https://github.com/0xEigenLabs/eigen-zkvm)      |              eAIR               |                                                                           |                               FRI, Groth16                                |    Solidity    |
 |               [jolt](https://github.com/a16z/jolt)                |              R1CS               |                    Lookup, Sumcheck, Offline Mem Check                    |                                  Spartan                                  |      WASM      |
@@ -110,6 +113,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## bench
 
+- [benchmarks (kkrt-labs)](https://github.com/kkrt-labs/zkvm-benchmarks/blob/master/.outputs/benchmark/simple_benchmarks.ipynb) | [code](https://github.com/kkrt-labs/zkvm-benchmarks)
 - [benchmarks (lita)](https://lita.gitbook.io/lita-documentation/architecture/benchmarks) | [code](https://github.com/lita-xyz/benchmarks)
 - [benchmark (risc0)](https://reports.risczero.com/benchmarks/Linux-cpu) | [code](https://github.com/risc0/risc0/tree/main/benchmarks)
 - zkvm-benchmarks (a16z) | [code](https://github.com/a16z/zkvm-benchmarks)
@@ -133,6 +137,9 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [Cairo – a Turing-complete STARK-friendly CPU architecture](https://eprint.iacr.org/2021/1063.pdf)
 - [A Verified Algebraic Representation of Cairo Program Execution](https://dl.acm.org/doi/pdf/10.1145/3497775.3503675)
 - [A Proof-Producing Compiler for Blockchain Applications](https://drops.dagstuhl.de/storage/00lipics/lipics-vol268-itp2023/LIPIcs.ITP.2023.7/LIPIcs.ITP.2023.7.pdf)
+
+### Cairo M
+- [Cairo M Design Document](https://github.com/kkrt-labs/cairo-m/blob/main/docs/design.pdf)
 
 ### Ceno
 
