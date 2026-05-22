@@ -194,6 +194,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 
 ## tutorials / educational zkVM
 
+- [RISC Zero zkVM: Running Existing Rust Code Inside a STARK](https://battam1111.github.io/midnight-zk-cookbook/tutorials/risc0-zkvm-rust.html) - hands-on Rust → STARK tutorial: take real cryptographic verification code (ECDSA + SHA256), wrap it as a Risc0 guest, generate and verify a proof, with performance characteristics and design tradeoffs vs circuit DSLs
 - [brainfuck tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
 - [chip0](https://github.com/shuklaayush/chip0)
 - [continuous read only memory constraints an implementation using lambdaworks](https://blog.lambdaclass.com/continuous-read-only-memory-constraints-an-implementation-using-lambdaworks/)
@@ -207,6 +208,8 @@ A curated list of zkVM, zero-knowledge virtual machine.
   
 ## related tooling
 
+- [zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) - multi-language CI audit CLI; detects Risc0 (via `risc0-build` / `risc0-zkvm` Cargo deps) plus SP1, Cairo, Noir, Leo, Compact, and runs six health detectors (language conventions, tests, CI, docs, security, reproducibility) with prioritized fix lists. MIT
+- [zk-doctor-action](https://github.com/Battam1111/zk-doctor-action) - GitHub Action wrapping `zk-pipeline-doctor` (v1.0.0 marketplace listing) — drop-in CI for any RISC-V-based zkVM project. MIT
 - [zkaleido](https://github.com/alpenlabs/zkaleido)
 - [zkRust](https://github.com/yetanotherco/zkRust)
 - [any zkVM](https://github.com/MatteoMer/any-zkvm)
