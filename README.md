@@ -129,6 +129,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - zkvm testing | [article](https://vac.dev/rlog/zkVM-testing/#summary-table)
 - prooflab benchmarks | [page](https://prooflab.dev/benchmarks)
 - Agglayer pessimistic Proof Benchmarks using zkVMs | [code](https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark)
+- [OpenChainBench](https://openchainbench.com) - Live independent benchmarks for ZK rollup finality time, L2 block time, and RPC latency across zkSync, Scroll, Starknet, Polygon zkEVM, and Linea.
 
 ## papers
 
