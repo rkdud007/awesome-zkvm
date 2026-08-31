@@ -204,7 +204,7 @@ A curated list of zkVM, zero-knowledge virtual machine.
 - [stwo brainfuck](https://github.com/kkrt-labs/stwo-brainfuck)
 - [useless zkvm](https://github.com/armanthepythonguy/Useless-ZKVM)
 - [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/)
-- [zkvm-rust-stark-verifiable-compute](https://github.com/CodesbyFebin/zkvm-rust-stark-verifiable-compute)
+- [rust-stark-zkvm](https://github.com/CodesbyFebin/rust-stark-zkvm)
   
 ## related tooling
 
